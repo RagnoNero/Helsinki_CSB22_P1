@@ -1,4 +1,10 @@
-<h3>Please login to add the notes</h3>
-<a href="/login"> login </a>
-<br />
-<a href="/register"> register </a>
+<!DOCTYPE html>
+<html>
+    {% include "head.html" %}    
+    <body>
+        <h3>Please login to add the notes</h3>
+        <a href="{% url 'notes:login' %}"> login </a>
+        <br />
+        <a href="{% url 'notes:register' %}"> register </a>
+    </body>
+</html>
