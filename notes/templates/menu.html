@@ -1,0 +1,15 @@
+<nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <a href="{% url 'notes:note' %}" class="navbar-item">Add note</a>
+    </div>
+
+    <div class="navbar-brand">
+        <a href="{% url 'notes:notes' %}" class="navbar-item">All notes</a>
+    </div>
+
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <a href="{% url 'notes:logout' %}" class="navbar-item">Logout</a>
+        </div>
+    </div>
+</nav>
