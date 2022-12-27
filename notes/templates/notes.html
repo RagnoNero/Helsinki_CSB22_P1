@@ -10,7 +10,8 @@
             {% for note in notes %}
             <div style="position: relative; height: 50px;">
                 <li>
-                    <a href="{% url 'notes:note' %}?id={{ note.id }}">{{ note.title }}</a>
+                    <a href="{% url 'notes:note' %}?id={{ note.id }}">{{ note.title|safe }}</a>
+                    <!--<a href="{% url 'notes:note' %}?id={{ note.id }}">{{ note.title }}</a> -->
                 </li>
                 <div class="control" style="position: absolute; right: 0; top: 0;">
                     <a href="{% url 'notes:remove' note.id %}" class="button is-danger">Delete</a>
